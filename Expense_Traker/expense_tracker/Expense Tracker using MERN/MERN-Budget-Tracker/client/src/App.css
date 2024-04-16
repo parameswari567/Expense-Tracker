@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: seashell;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+h2 {
+  color: slategray;
+}
+
+.error-notice {
+  color: red;
+  text-align: center;
+}
+
+form {
+  padding: 30px 40px;
+}
+
+form h3 {
+  text-align: center;
+}
+
+.login-register {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  max-width: 50%;
+  position: relative;
+}
+.button {
+  display: block;
+  margin: auto;
+  font-size: 16px;
+}
+
+.home {
+  text-align: center;
+}
+
+.navbar {
+  background-color: steelblue;
+}
+
+.auth-options {
+  color: white !important;
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  color: rgb(227, 232, 240) !important;
+}
+
+.navlink:hover {
+  color: rgb(227, 232, 240) !important;
+}
+
+.balance {
+  text-align: center;
+  color: slategray;
+}
+
+.income-expense {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group.expense {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+
+.input-group.income {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+
+.submit {
+  width: 5%;
+  margin-left: 12.2%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+  padding: 3px 10px;
+  color: white;
+}
+
+.submit:focus {
+  outline: 0;
+}
+
+.submit.income {
+  background-color: mediumseagreen;
+}
+
+.submit.expense {
+  background-color: tomato;
+}
+
+.submit:active {
+  transform: scale(0.98);
+}
+
+.delete-btn {
+  font-size: 16px;
+  padding: 2px 7px;
+  color: red;
+  background-color: seashell;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -30px;
+}
+
+.delete-btn:focus {
+  outline: 0;
+}
+
+.delete-btn:active {
+  transform: scale(0.9);
+}
+
+.delete-btn:hover {
+  background-color: unset;
+  color: red;
+}
+
+.label {
+  margin: 10px 0;
+}
+
+.plus {
+  color: rgb(51, 153, 97);
+}
+
+.minus {
+  color: rgb(228, 87, 62);
+}
+
+.transaction.income {
+  position: relative;
+  background-color: mediumseagreen;
+  border-radius: 5px;
+  width: 300px;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+.transaction.expense {
+  position: relative;
+  background-color: tomato;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 300px;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+.transactions-income {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 30%;
+  right: 68%;
+}
+
+.transactions-expense {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 30%;
+  left: 66.5%;
+}
+
+.transaction-list.income {
+  position: absolute;
+  /* overflow-wrap: break-word; */
+  top: 50px;
+  left: -30px;
+  padding: 5px 20px;
+  color: white;
+}
+
+.transaction-list.expense {
+  position: absolute;
+  overflow-wrap: break-word;
+  top: 50px;
+  left: -30px;
+  padding: 5px 20px;
+  color: white;
+}
+
+.transaction-amount {
+  position: absolute;
+  right: 10px;
+}
